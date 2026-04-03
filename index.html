@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yolla – Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #ffffff;
+      color: #1a1a2e;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    header {
+      background: #3D5A80;
+      color: #ffffff;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: 1px; }
+    header p  { margin-top: 8px; font-size: 0.95rem; opacity: 0.8; }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+      margin-bottom: 32px;
+    }
+    .lang-switch button {
+      padding: 6px 18px;
+      border: 2px solid #3D5A80;
+      border-radius: 20px;
+      background: transparent;
+      color: #3D5A80;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-switch button.active,
+    .lang-switch button:hover {
+      background: #3D5A80;
+      color: #ffffff;
+    }
+
+    .policy-section { display: none; }
+    .policy-section.visible { display: block; }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #3D5A80;
+      margin: 36px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e8eef4;
+    }
+    h2:first-of-type { margin-top: 0; }
+
+    p  { margin-bottom: 14px; color: #333; }
+    ul { margin: 0 0 14px 20px; }
+    ul li { margin-bottom: 6px; color: #333; }
+
+    .updated {
+      display: inline-block;
+      background: #eef2f7;
+      color: #3D5A80;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+    }
+
+    .contact-box {
+      background: #f4f7fb;
+      border-left: 4px solid #3D5A80;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+    .contact-box a { color: #3D5A80; font-weight: 600; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: #999;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Yolla</h1>
+  <p>Privacy Policy / Məxfilik Siyasəti</p>
+</header>
+
+<div class="container">
+
+  <div class="lang-switch">
+    <button class="active" onclick="showLang('en', this)">English</button>
+    <button onclick="showLang('az', this)">Azərbaycan</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ ENGLISH ═══ -->
+  <div id="lang-en" class="policy-section visible">
+
+    <span class="updated">Last updated: April 2026</span>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>Yolla</strong> ("we", "our", or "us"). Yolla is a delivery service application that connects clients, partners, and couriers. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your personal data.</p>
+    <p>By using the Yolla app, you agree to this Privacy Policy.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <p><strong>Account Information</strong></p>
+    <ul>
+      <li>Phone number (used as your primary identifier for login via SMS OTP)</li>
+      <li>First name and last name</li>
+      <li>Email address (optional; used for account management)</li>
+      <li>Profile photo (optional)</li>
+    </ul>
+
+    <p><strong>Role-Specific Information</strong></p>
+    <ul>
+      <li><em>Partners:</em> Shop / business name</li>
+      <li><em>Couriers:</em> Vehicle type, identity document photo (required for verification)</li>
+    </ul>
+
+    <p><strong>Order Information</strong></p>
+    <ul>
+      <li>Sender name and phone number</li>
+      <li>Recipient name and phone number</li>
+      <li>Pickup address</li>
+      <li>Delivery city / region</li>
+      <li>Package size, quantity, and optional photo</li>
+      <li>Delivery notes (door code, special instructions)</li>
+      <li>Payment method (cash or card)</li>
+      <li>Order status and timestamps</li>
+    </ul>
+
+    <p><strong>Location Data</strong></p>
+    <ul>
+      <li>Your device's GPS location is accessed when you create an order (to set the pickup address) or when you are an active courier (to show your position on the map).</li>
+      <li>Location is accessed only while the app is in use (<em>when-in-use</em> permission).</li>
+    </ul>
+
+    <p><strong>Device & Technical Data</strong></p>
+    <ul>
+      <li>Push notification token (FCM) – used to send you order updates and alerts</li>
+      <li>Authentication token – stored securely on your device using encrypted storage</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>To authenticate your identity via SMS verification code</li>
+      <li>To create and manage delivery orders</li>
+      <li>To connect couriers with clients and partners</li>
+      <li>To display your location on the map during active orders</li>
+      <li>To send push notifications about order status changes</li>
+      <li>To allow couriers to see recipient address and contact details necessary for delivery</li>
+      <li>To apply promotions and discounts to orders</li>
+      <li>To allow account management (edit profile, delete account)</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <ul>
+      <li><strong>Firebase (Google)</strong> – Used for SMS OTP authentication and push notification delivery (FCM). Firebase may collect device identifiers. See <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</li>
+      <li><strong>Google Maps</strong> – Used to display maps and resolve pickup addresses. See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+      <li><strong>Supabase</strong> – Used for cloud storage of profile photos, courier ID photos, and package photos. Files are stored securely. See <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>.</li>
+    </ul>
+    <p>We do not use any advertising networks, analytics SDKs, or data brokers.</p>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell your personal data to third parties.</p>
+    <p>Within the app, the following limited sharing occurs for operational purposes:</p>
+    <ul>
+      <li>Couriers can see the recipient's name, phone number, and delivery address for the orders they accept.</li>
+      <li>Partners can see order details for their store deliveries.</li>
+    </ul>
+
+    <h2>6. Data Retention</h2>
+    <ul>
+      <li>Your account data is retained as long as your account is active.</li>
+      <li>If you delete your account, your personal information is anonymized immediately and your active orders (not yet delivered) are cancelled.</li>
+      <li>Delivered order records may be retained for legal and business purposes.</li>
+    </ul>
+
+    <h2>7. Your Rights</h2>
+    <ul>
+      <li><strong>Access:</strong> You can view your profile data within the app.</li>
+      <li><strong>Edit:</strong> You can update your name, phone, email, and photo at any time.</li>
+      <li><strong>Delete:</strong> You can delete your account directly from the app. Deletion is only possible when you have no active (undelivered) orders.</li>
+    </ul>
+
+    <h2>8. Security</h2>
+    <p>We take reasonable steps to protect your data. Authentication tokens are stored using encrypted secure storage on your device. Data is transmitted over HTTPS. Photos are stored in a secure cloud storage service.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>Yolla is not intended for children under the age of 13. We do not knowingly collect personal data from children.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app or by updating the date at the top of this page.</p>
+
+    <h2>11. Contact Us</h2>
+    <div class="contact-box">
+      <p>If you have any questions about this Privacy Policy or your personal data, please contact us:</p>
+      <p>📧 <a href="mailto:yollagetsin10@gmail.com">yollagetsin10@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════════ AZERBAIJANI ═══ -->
+  <div id="lang-az" class="policy-section">
+
+    <span class="updated">Son yenilənmə: Aprel 2026</span>
+
+    <h2>1. Giriş</h2>
+    <p><strong>Yolla</strong> tətbiqinə xoş gəldiniz. Yolla müştəriləri, tərəfdaşları və kurierləri birləşdirən çatdırılma xidməti tətbiqidir. Bu Məxfilik Siyasəti hansı məlumatları topladığımızı, onları necə istifadə etdiyimizi və şəxsi məlumatlarınızla bağlı hüquqlarınızı izah edir.</p>
+    <p>Yolla tətbiqindən istifadə etməklə bu Məxfilik Siyasətini qəbul etmiş olursunuz.</p>
+
+    <h2>2. Topladığımız Məlumatlar</h2>
+
+    <p><strong>Hesab Məlumatları</strong></p>
+    <ul>
+      <li>Telefon nömrəsi (SMS OTP ilə giriş üçün əsas identifikator kimi istifadə olunur)</li>
+      <li>Ad və soyad</li>
+      <li>E-poçt ünvanı (isteğe bağlı)</li>
+      <li>Profil şəkli (isteğe bağlı)</li>
+    </ul>
+
+    <p><strong>Rola Xüsusi Məlumatlar</strong></p>
+    <ul>
+      <li><em>Tərəfdaşlar:</em> Mağaza / şirkət adı</li>
+      <li><em>Kurierlər:</em> Nəqliyyat vasitəsinin növü, şəxsiyyət vəsiqəsinin şəkli (yoxlama üçün tələb olunur)</li>
+    </ul>
+
+    <p><strong>Sifariş Məlumatları</strong></p>
+    <ul>
+      <li>Göndərənin adı və telefon nömrəsi</li>
+      <li>Alıcının adı və telefon nömrəsi</li>
+      <li>Götürülmə ünvanı</li>
+      <li>Çatdırılma şəhəri / bölgəsi</li>
+      <li>Bağlamanın ölçüsü, miqdarı və isteğe bağlı şəkli</li>
+      <li>Çatdırılma qeydi (qapı kodu, xüsusi təlimatlar)</li>
+      <li>Ödəniş üsulu (nağd və ya kart)</li>
+      <li>Sifariş statusu və vaxt damğaları</li>
+    </ul>
+
+    <p><strong>Məkan Məlumatları</strong></p>
+    <ul>
+      <li>Sifariş yaradarkən (götürülmə ünvanını təyin etmək üçün) və ya aktiv kurier olduqda (xəritədə mövqeyinizi göstərmək üçün) cihazınızın GPS məkanına daxil olunur.</li>
+      <li>Məkana yalnız tətbiq istifadə zamanı (<em>when-in-use</em>) daxil olunur.</li>
+    </ul>
+
+    <p><strong>Cihaz və Texniki Məlumatlar</strong></p>
+    <ul>
+      <li>Push bildiriş tokeni (FCM) – sifariş yeniləmələri göndərmək üçün</li>
+      <li>Autentifikasiya tokeni – cihazınızda şifrəli saxlama vasitəsilə təhlükəsiz saxlanılır</li>
+    </ul>
+
+    <h2>3. Məlumatlarınızı Necə İstifadə Edirik</h2>
+    <ul>
+      <li>SMS doğrulama kodu ilə şəxsiyyətinizi təsdiqləmək</li>
+      <li>Çatdırılma sifarişlərini yaratmaq və idarə etmək</li>
+      <li>Kurierləri müştərilər və tərəfdaşlarla birləşdirmək</li>
+      <li>Aktiv sifarişlər zamanı xəritədə mövqeyinizi göstərmək</li>
+      <li>Sifariş statusu dəyişiklikləri haqqında push bildirişlər göndərmək</li>
+      <li>Kurierlərə çatdırılma üçün lazımi alıcı ünvanını və əlaqə məlumatlarını göstərmək</li>
+      <li>Sifarişlərə promosyonlar və endirimlər tətbiq etmək</li>
+      <li>Hesab idarəçiliyinə (profili düzəltmək, hesabı silmək) imkan vermək</li>
+    </ul>
+
+    <h2>4. Üçüncü Tərəf Xidmətlər</h2>
+    <ul>
+      <li><strong>Firebase (Google)</strong> – SMS OTP autentifikasiyası və push bildiriş çatdırılması (FCM) üçün istifadə olunur. Bax: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Məxfilik Siyasəti</a>.</li>
+      <li><strong>Google Maps</strong> – Xəritələri göstərmək və götürülmə ünvanlarını müəyyən etmək üçün istifadə olunur. Bax: <a href="https://policies.google.com/privacy" target="_blank">Google Məxfilik Siyasəti</a>.</li>
+      <li><strong>Supabase</strong> – Profil şəkilləri, kurier şəxsiyyət şəkilləri və bağlama şəkillərinin saxlanması üçün istifadə olunur. Bax: <a href="https://supabase.com/privacy" target="_blank">Supabase Məxfilik Siyasəti</a>.</li>
+    </ul>
+    <p>Biz heç bir reklam şəbəkəsi, analitika SDK-sı və ya məlumat brokeri istifadə etmirik.</p>
+
+    <h2>5. Məlumatların Paylaşılması</h2>
+    <p>Şəxsi məlumatlarınızı üçüncü tərəflərə satmırıq.</p>
+    <p>Tətbiq daxilində əməliyyat məqsədləri üçün aşağıdakı məhdud paylaşım baş verir:</p>
+    <ul>
+      <li>Kurierlər qəbul etdikləri sifarişlər üçün alıcının adını, telefon nömrəsini və çatdırılma ünvanını görə bilər.</li>
+      <li>Tərəfdaşlar öz mağazalarının çatdırılma sifarişlərinin detallarını görə bilər.</li>
+    </ul>
+
+    <h2>6. Məlumatların Saxlanması</h2>
+    <ul>
+      <li>Hesab məlumatlarınız hesabınız aktiv olduğu müddətdə saxlanılır.</li>
+      <li>Hesabınızı silsəniz, şəxsi məlumatlarınız dərhal anonimləşdirilir və aktiv sifarişləriniz (hələ çatdırılmamış) ləğv edilir.</li>
+      <li>Çatdırılmış sifariş qeydləri hüquqi və biznes məqsədləri üçün saxlanıla bilər.</li>
+    </ul>
+
+    <h2>7. Hüquqlarınız</h2>
+    <ul>
+      <li><strong>Əldə etmə:</strong> Profil məlumatlarınızı tətbiq daxilində görə bilərsiniz.</li>
+      <li><strong>Redaktə:</strong> Adınızı, telefonunuzu, e-poçtunuzu və şəklinizi istənilən vaxt yeniləyə bilərsiniz.</li>
+      <li><strong>Silmə:</strong> Hesabınızı birbaşa tətbiqdən silə bilərsiniz. Silmə yalnız aktiv (çatdırılmamış) sifarişiniz olmadıqda mümkündür.</li>
+    </ul>
+
+    <h2>8. Təhlükəsizlik</h2>
+    <p>Məlumatlarınızı qorumaq üçün lazımi tədbirlər görürük. Autentifikasiya tokenləri cihazınızda şifrəli saxlama vasitəsilə saxlanılır. Məlumatlar HTTPS üzərindən ötürülür. Şəkillər təhlükəsiz bulud saxlama xidmətində saxlanılır.</p>
+
+    <h2>9. Uşaqların Məxfiliyi</h2>
+    <p>Yolla 13 yaşından kiçik uşaqlar üçün nəzərdə tutulmayıb. Biz uşaqlardan bilərəkdən şəxsi məlumat toplamırıq.</p>
+
+    <h2>10. Siyasətdə Dəyişikliklər</h2>
+    <p>Bu Məxfilik Siyasətini vaxtaşırı yeniləyə bilərik. Əhəmiyyətli dəyişikliklər haqqında tətbiq vasitəsilə və ya bu səhifənin yuxarısındakı tarixi yeniləməklə sizi xəbərdar edəcəyik.</p>
+
+    <h2>11. Bizimlə Əlaqə</h2>
+    <div class="contact-box">
+      <p>Bu Məxfilik Siyasəti və ya şəxsi məlumatlarınızla bağlı hər hansı sualınız varsa, bizimlə əlaqə saxlayın:</p>
+      <p>📧 <a href="mailto:yollagetsin10@gmail.com">yollagetsin10@gmail.com</a></p>
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Yolla. All rights reserved.
+</footer>
+
+<script>
+  function showLang(lang, btn) {
+    document.querySelectorAll('.policy-section').forEach(el => el.classList.remove('visible'));
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('visible');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
