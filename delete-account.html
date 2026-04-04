@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delete Account – Yolla</title>
+  <title>Delete Account / Hesabı Sil – Yolla</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -13,7 +13,7 @@
       padding: 24px 16px;
     }
     .container {
-      max-width: 680px;
+      max-width: 720px;
       margin: 0 auto;
       background: #fff;
       border-radius: 12px;
@@ -39,6 +39,32 @@
       font-weight: 700;
     }
     .logo-text { font-size: 22px; font-weight: 700; color: #3D5A80; }
+
+    /* Language switcher */
+    .lang-switcher {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .lang-btn {
+      padding: 7px 20px;
+      border-radius: 20px;
+      border: 2px solid #3D5A80;
+      background: transparent;
+      color: #3D5A80;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: #3D5A80;
+      color: #fff;
+    }
+
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+
     h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; color: #1a1a2e; }
     .subtitle { color: #666; margin-bottom: 32px; font-size: 15px; line-height: 1.6; }
     h2 { font-size: 17px; font-weight: 600; margin: 28px 0 10px; color: #3D5A80; }
@@ -89,64 +115,133 @@
       <span class="logo-text">Yolla</span>
     </div>
 
-    <span class="tag">Account Management</span>
-    <h1>How to Delete Your Account</h1>
-    <p class="subtitle">
-      You can permanently delete your Yolla account at any time. This page explains how to request account deletion and what data will be removed.
-    </p>
-
-    <hr class="divider" />
-
-    <h2>Option 1 — Delete from the App</h2>
-    <div class="steps">
-      <ol>
-        <li>Open the <strong>Yolla</strong> app on your device</li>
-        <li>Go to <strong>Profile</strong> (bottom navigation)</li>
-        <li>Tap <strong>Settings</strong></li>
-        <li>Scroll down and tap <strong>"Delete Account"</strong></li>
-        <li>Confirm the action when prompted</li>
-      </ol>
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="switchLang('en')">English</button>
+      <button class="lang-btn" onclick="switchLang('az')">Azərbaycanca</button>
     </div>
 
-    <h2>Option 2 — Request via Email</h2>
-    <p>
-      If you are unable to access the app, you can request account deletion by sending an email to our support team:
-    </p>
-    <div class="steps">
-      <p>📧 <strong>yollagetsin10@gmail.com</strong></p>
-      <p>Subject: <strong>Account Deletion Request</strong></p>
-      <p>Please include the phone number associated with your account.</p>
+    <!-- ENGLISH -->
+    <div id="lang-en" class="lang-section active">
+      <span class="tag">Account Management</span>
+      <h1>How to Delete Your Account</h1>
+      <p class="subtitle">
+        You can permanently delete your Yolla account at any time. This page explains how to request account deletion and what data will be removed.
+      </p>
+
+      <hr class="divider" />
+
+      <h2>Option 1 — Delete from the App</h2>
+      <div class="steps">
+        <ol>
+          <li>Open the <strong>Yolla</strong> app on your device</li>
+          <li>Go to <strong>Profile</strong> (bottom navigation)</li>
+          <li>Tap <strong>Settings</strong></li>
+          <li>Scroll down and tap <strong>"Delete Account"</strong></li>
+          <li>Confirm the action when prompted</li>
+        </ol>
+      </div>
+
+      <h2>Option 2 — Request via Email</h2>
+      <p>If you are unable to access the app, you can request account deletion by sending an email to our support team:</p>
+      <div class="steps">
+        <p>📧 <strong>yollagetsin10@gmail.com</strong></p>
+        <p>Subject: <strong>Account Deletion Request</strong></p>
+        <p>Please include the phone number associated with your account.</p>
+      </div>
+      <p>We will process your request within <strong>7 business days</strong>.</p>
+
+      <hr class="divider" />
+
+      <h2>What Data Will Be Deleted</h2>
+      <ul>
+        <li>Your profile information (name, phone number)</li>
+        <li>Your order history</li>
+        <li>Your saved addresses</li>
+        <li>Profile photo</li>
+        <li>All account credentials</li>
+      </ul>
+
+      <h2>What Data May Be Retained</h2>
+      <p>Some data may be retained for a limited period as required by law (e.g., transaction records for accounting purposes). This data will be permanently deleted after the legally required retention period.</p>
+
+      <div class="warning">
+        ⚠️ <strong>Account deletion is permanent and cannot be undone.</strong> Once deleted, you will lose access to all your data, order history, and account benefits. You can create a new account at any time using the same phone number.
+      </div>
+
+      <hr class="divider" />
+
+      <div class="contact">
+        <strong>Need help?</strong><br />
+        Contact our support team at <a href="mailto:yollagetsin10@gmail.com">yollagetsin10@gmail.com</a><br /><br />
+        <a href="https://yollagetsin10-dotcom.github.io/yolla-privacy">← Privacy Policy</a>
+      </div>
     </div>
-    <p>We will process your request within <strong>7 business days</strong>.</p>
 
-    <hr class="divider" />
+    <!-- AZERBAIJANI -->
+    <div id="lang-az" class="lang-section">
+      <span class="tag">Hesab İdarəetməsi</span>
+      <h1>Hesabınızı Necə Silmək Olar</h1>
+      <p class="subtitle">
+        Yolla hesabınızı istənilən vaxt tamamilə silə bilərsiniz. Bu səhifədə hesabın silinməsini necə tələb edəcəyiniz və hansı məlumatların silinəcəyi izah edilir.
+      </p>
 
-    <h2>What Data Will Be Deleted</h2>
-    <ul>
-      <li>Your profile information (name, phone number)</li>
-      <li>Your order history</li>
-      <li>Your saved addresses</li>
-      <li>Profile photo</li>
-      <li>All account credentials</li>
-    </ul>
+      <hr class="divider" />
 
-    <h2>What Data May Be Retained</h2>
-    <p>
-      Some data may be retained for a limited period as required by law (e.g., transaction records for accounting purposes). This data is not used for marketing and will be permanently deleted after the legally required retention period.
-    </p>
+      <h2>Seçim 1 — Tətbiqdən Silin</h2>
+      <div class="steps">
+        <ol>
+          <li>Cihazınızda <strong>Yolla</strong> tətbiqini açın</li>
+          <li>Alt naviqasiyadan <strong>Profil</strong>ə keçin</li>
+          <li><strong>Parametrlər</strong>ə toxunun</li>
+          <li>Aşağı diyirləyin və <strong>"Hesabı Sil"</strong>ə toxunun</li>
+          <li>Sorulduqda əməliyyatı təsdiqləyin</li>
+        </ol>
+      </div>
 
-    <div class="warning">
-      ⚠️ <strong>Account deletion is permanent and cannot be undone.</strong> Once deleted, you will lose access to all your data, order history, and account benefits. You can create a new account at any time using the same phone number.
-    </div>
+      <h2>Seçim 2 — E-poçt vasitəsilə Tələb Edin</h2>
+      <p>Tətbiqə daxil ola bilmirsinizsə, dəstək komandasımıza e-poçt göndərərək hesabın silinməsini tələb edə bilərsiniz:</p>
+      <div class="steps">
+        <p>📧 <strong>yollagetsin10@gmail.com</strong></p>
+        <p>Mövzu: <strong>Hesabın Silinməsi Tələbi</strong></p>
+        <p>Zəhmət olmasa hesabınızla əlaqəli telefon nömrəsini qeyd edin.</p>
+      </div>
+      <p>Tələbinizi <strong>7 iş günü</strong> ərzində icra edəcəyik.</p>
 
-    <hr class="divider" />
+      <hr class="divider" />
 
-    <div class="contact">
-      <strong>Need help?</strong><br />
-      Contact our support team at <a href="mailto:yollagetsin10@gmail.com">yollagetsin10@gmail.com</a><br />
-      <br />
-      <a href="https://yollagetsin10-dotcom.github.io/yolla-privacy">← Privacy Policy</a>
+      <h2>Hansı Məlumatlar Silinəcək</h2>
+      <ul>
+        <li>Profil məlumatlarınız (ad, telefon nömrəsi)</li>
+        <li>Sifariş tarixçəniz</li>
+        <li>Yadda saxladığınız ünvanlar</li>
+        <li>Profil şəkli</li>
+        <li>Bütün hesab məlumatları</li>
+      </ul>
+
+      <h2>Hansı Məlumatlar Saxlanıla Bilər</h2>
+      <p>Qanunun tələb etdiyi hallarda bəzi məlumatlar məhdud müddət saxlanıla bilər (məsələn, mühasibat məqsədləri üçün əməliyyat qeydləri). Bu məlumatlar marketinq üçün istifadə edilmir və qanuni saxlama müddəti başa çatdıqdan sonra tamamilə silinəcək.</p>
+
+      <div class="warning">
+        ⚠️ <strong>Hesabın silinməsi geri qaytarıla bilməz.</strong> Silindikdən sonra bütün məlumatlarınıza, sifariş tarixçənizə və hesab üstünlüklərinizə girişinizi itirəcəksiniz. Eyni telefon nömrəsindən istifadə edərək istənilən vaxt yeni hesab yarada bilərsiniz.
+      </div>
+
+      <hr class="divider" />
+
+      <div class="contact">
+        <strong>Kömək lazımdır?</strong><br />
+        Dəstək komandamızla əlaqə saxlayın: <a href="mailto:yollagetsin10@gmail.com">yollagetsin10@gmail.com</a><br /><br />
+        <a href="https://yollagetsin10-dotcom.github.io/yolla-privacy">← Məxfilik Siyasəti</a>
+      </div>
     </div>
   </div>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
